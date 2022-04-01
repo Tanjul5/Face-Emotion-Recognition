@@ -374,7 +374,7 @@ def main():
         html_temp = """
     <body style="background-color:red;">
     <div style="background-color:teal ;padding:0.25px">
-    <h2 style="color:white;text-align:center;">Copyright © 2021 | Tanjul Gohar </h2>
+    <h2 style="color:white;text-align:center;">Copyright © 2022 | Tanjul Gohar </h2>
     </div>
     </body>
         """
