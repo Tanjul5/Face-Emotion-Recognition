@@ -31,9 +31,15 @@ We imported the image above which looks angry and our model gives us “36 years
 
 Since the FER2013 dataset is quite small and unbalanced, we found that utilizing transfer learning significantly boosted the accuracy of our model. ResNet50 is the first pre-trained model we explored. ResNet50 is a deep residual network with 50 layers. It is defined in Keras with 175 layers. We replaced the original output layer with one FC layer of size 1000 and a softmax output layer of 7 emotion classes. We used Adam as our optimizer after training for 50 epochs using Adam and a batch size of 785, we achieved 63.11% accuracy on the test set and 67% on the train set. There is much less over-fitting. We have taken epochs as 50. Once the threshold is achieved by the model and we further tried to train our model, then it provided unexpected results and its accuracy also decreased. After that, increasing the epoch would also not help. Hence, epochs play a very important role in deciding the accuracy of the model, and its value can be decided through trial and error.
 
+ ![image](https://user-images.githubusercontent.com/88198641/166414067-5b5f1be0-df3c-4963-8f08-2dd083444607.png)
+
+
 3) Xception
 
 Xception architecture is a linear stack of depth wise separable convolution layers with residual connections. This makes the architecture very easy to define and modify; it takes only 30 to 40 lines of code using a high level library such as Keras or Tensorflow not unlike an architecture such as VGG-16, but rather un- like architectures such as Inception V2 or V3 which are far more complex to define. An open-source implementation of Xception using Keras and Tensorflow is provided as part of the Keras Applications module2, under the MIT license. We used Adam as our optimizer after training for 70 epochs using Adam and a batch size of 785, we achieved 64% accuracy on the test set.
+
+![image](https://user-images.githubusercontent.com/88198641/166414130-14a6eb84-f636-4178-a018-e00aa874a287.png)
+
 
 4) Custom Deep CNN
 
@@ -45,9 +51,8 @@ One drawback of the system is the some Disgust faces are showing Neutral .Becaus
 I thought it was a good score should improve the score.
 Thus I decided that I will deploy the model.
 
-#Loss & Accuracy Plot
+![image](https://user-images.githubusercontent.com/88198641/166414173-c7cf4960-360a-40db-91bb-98a7dfea897f.png)
 
-![image](https://user-images.githubusercontent.com/88198641/166413278-564b02ae-b945-4db0-8641-e5eadbfef941.png)
 
 #Result & Discussion
 
@@ -55,11 +60,12 @@ Thus I decided that I will deploy the model.
 
 
 #Realtime Local Video Face Detection
+
 We created patterns for detecting and predicting single faces and as well as multiple faces using OpenCV videocapture in local. For Webapp , OpenCV can’t be used. Thus, using Streamlit-Webrtc for front-end application.
 
 #Deployment of Streamlit WebApp in Heroku and Streamlit
-We deployed the app in Heroku if you saw in the starting section of github repo, you can see the all the requirement files are there for creating an app on Heroku of name “face-emotion-recognition-ofg”.
-But due to high slug size the buffering takes time so we have ran our app working on local and it ran properly and app is also fine also we’ve included video on github repo.
+
+We deployed the app in Heroku if you saw in the starting section of GitHub repo you see the all the requirement files are there for creating an app on Heroku of name “face-emotion-recognition4”. but due to high slug size the buffering takes time so we have run our app working on local and it ran properly and app is also fine also we’ve included video on GitHub repo
 
 Heroku Link:-  https://face-emotion-recognition4.herokuapp.com/
 
