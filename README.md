@@ -46,9 +46,11 @@ I thought it was a good score should improve the score.
 Thus I decided that I will deploy the model.
 
 #Loss & Accuracy Plot
+
 ![image](https://user-images.githubusercontent.com/88198641/166413278-564b02ae-b945-4db0-8641-e5eadbfef941.png)
 
 #Result & Discussion
+
 ![image](https://user-images.githubusercontent.com/88198641/166413782-11e6543e-1db0-4a9d-a6a0-0b1764d684ea.png)
 
 
