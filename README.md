@@ -1,11 +1,11 @@
-# Face-Emotion-Recognition
+Face-Emotion-Recognition
 
 Live Class Monitoring System(Face Emotion Recognition)
 
 Emotion recognition is the process of identifying human emotion. People vary widely in their accuracy at recognizing the emotions of others. Use of technology to help people with emotion recognition is a relatively nascent research area. Generally, the technology works best if it uses multiple modalities in context. To date, the most work has been conducted on automating the recognition of facial expressions from video, spoken expressions from audio, written expressions from text, and physiology as measured by wearables.
 Facial expressions are a form of nonverbal communication. Various studies have been done for the classification of these facial expressions. There is strong evidence for the universal facial expressions of seven emotions which include: neutral happy, sadness, anger, disgust, fear, and surprise. So it is very important to detect these emotions on the face as it has wide applications in the field of Computer Vision and Artificial Intelligence. These fields are researching on the facial emotions to get the sentiments of the humans automatically.
 
-#Problem Statement
+Problem Statement
 
 The Indian education landscape has been undergoing rapid changes for the past 10 years owing to the advancement of web-based learning services, specifically, eLearning platforms.
 Global E-learning is estimated to witness an 8X over the next 5 years to reach USD 2B in 2021. India is expected to grow with a CAGR of 44% crossing the 10M users mark in 2021. Although the market is growing on a rapid scale, there are major challenges associated with digital learning when compared with brick and mortar classrooms. One of many challenges is how to ensure quality learning for students. Digital platforms might overpower physical classrooms in terms of content quality but when it comes to understanding whether students are able to grasp the content in a live class scenario is yet an open-end challenge. In a physical classroom during a lecturing teacher can see the faces and assess the emotion of the class and tune their lecture accordingly, whether he is going fast or slow. He can identify students who need special attention.
@@ -15,7 +15,7 @@ Deep learning backed system not only solves the surveillance issue, but it also 
 I will solve the above-mentioned challenge by applying deep learning algorithms to live video data. The solution to this problem is by recognizing facial emotions.
 I have built a deep learning model which detects the real time emotions of students through a webcam so that teachers can understand if students are able to grasp the topic according to students' expressions or emotions and then deploy the model. The model is trained on the FER-2013 dataset .This dataset consists of 35887 grayscale, 48x48 sized face images with seven emotions - angry, disgusted, fearful, happy, neutral, sad and surprised.
 
-#Dataset Information:
+Dataset Information:
 
 I have built a deep learning model which detects the real time emotions of students through a webcam so that teachers can understand if students are able to grasp the topic according to students' expressions or emotions and then deploy the model. The model is trained on the FER-2013 dataset .This dataset consists of 35887 grayscale, 48x48 sized face images with seven emotions - angry, disgusted, fearful, happy, neutral, sad and surprised. Here is the dataset link:- https://www.kaggle.com/msambare/fer2013
 
@@ -54,22 +54,17 @@ Thus I decided that I will deploy the model.
 ![image](https://user-images.githubusercontent.com/88198641/166414173-c7cf4960-360a-40db-91bb-98a7dfea897f.png)
 
 
-#Result & Discussion
-
-![image](https://user-images.githubusercontent.com/88198641/166413782-11e6543e-1db0-4a9d-a6a0-0b1764d684ea.png)
-
-
-#Realtime Local Video Face Detection
+Realtime Local Video Face Detection
 
 We created patterns for detecting and predicting single faces and as well as multiple faces using OpenCV videocapture in local. For Webapp , OpenCV can’t be used. Thus, using Streamlit-Webrtc for front-end application.
 
-#Deployment of Streamlit WebApp in Heroku and Streamlit
+Deployment of Streamlit WebApp in Heroku and Streamlit
 
 We deployed the app in Heroku if you saw in the starting section of GitHub repo you see the all the requirement files are there for creating an app on Heroku of name “face-emotion-recognition4”. but due to high slug size the buffering takes time so we have run our app working on local and it ran properly and app is also fine also we’ve included video on GitHub repo
 
 Heroku Link:-  https://face-emotion-recognition4.herokuapp.com/
 
-#Conclusion
+Conclusion
 
 We explored several models including shallow CNNs, DeepFace, ResNet50, and Xception. To alleviate FER2013’s inherent class imbalance, we employed class weights, data augmentation, and auxiliary datasets. By ensemble seven models we achieved 77% training accuracy and 69% accuracy for CNN model. Additionally, we demonstrated that FER models could be applied in the real world by developing a web application with real-time recognition speeds. It was interesting project and we learn lot from this project.
 
