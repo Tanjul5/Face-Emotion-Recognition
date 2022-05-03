@@ -57,6 +57,7 @@ Thus I decided that I will deploy the model.
 Realtime Local Video Face Detection
  
 We created patterns for detecting and predicting single faces as well as multiple faces using OpenCV video capture in a local webcam. Some of the detected face emotion are as follows:
+
 ![Screenshot (81)](https://user-images.githubusercontent.com/88198641/166415086-f0562133-a820-47ae-959c-7fb0898ca043.png)
 
 ![Screenshot (82](https://user-images.githubusercontent.com/88198641/166415115-a65b4098-231e-4678-9e91-a524a9cb6587.png)
